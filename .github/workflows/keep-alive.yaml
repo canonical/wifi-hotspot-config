@@ -1,0 +1,16 @@
+
+name: Keep alive
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 1 * *' # monthly
+
+jobs:
+  snap:
+    uses: canonical/robotics-actions-workflows/.github/workflows/keepalive.yaml@main
+    with:
+      workflow_files: "./snap.yaml"
