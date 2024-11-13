@@ -1,8 +1,6 @@
 name: Monthly builds
 
 on:
-  schedule:
-    - cron: '0 0 1 * *'
   push:
     tags:
       - '*'
@@ -21,3 +19,4 @@ jobs:
     with:
       runs-on: '["ubuntu-latest", ["self-hosted", "linux", "ARM64", "medium", "noble"]]'
       git-ref: ${{ inputs.branch-name == '' && github.ref || inputs.branch-name }}
+      snapcraft-channel: '8.x/stable'
