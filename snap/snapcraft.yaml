@@ -1,6 +1,10 @@
 name: wifi-hotspot-config
-version: '0.1'
+version: git
 summary: Basic configuration for wifi-hotspot
+license: GPL-3.0
+contact: ubuntu-robotics-community@canonical.com
+source-code: https://github.com/ubuntu-robotics/wifi-hotspot-config
+issues: https://github.com/ubuntu-robotics/wifi-hotspot-config/issues
 description: |
   This snap carries out basic configuration for an Ubuntu Core appliance
   needing a wifi hotspot.
